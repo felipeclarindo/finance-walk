@@ -1,7 +1,7 @@
-import NavBarProps from "@/interfaces";
+import { NavBarProps } from "@/interfaces";
 import Link from "next/link";
 
-export function NavBar(props: NavBarProps) {
+export function NavBar(props: Readonly<NavBarProps>) {
   const { active } = props;
   const activeClass = "border-b-4 border-pink-600";
 
